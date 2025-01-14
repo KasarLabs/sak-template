@@ -28,7 +28,7 @@
 
 - Node.js installed
 - Git installed
-- An Anthropic API key (Get one at https://console.anthropic.com/)
+- An AI model provider API key (Choose one from the list [here](https://github.com/KasarLabs/starknet-agent-kit/blob/main/src/config/env.validation.ts))
 - A Starknet wallet private key
 - A Starknet RPC URL
 
