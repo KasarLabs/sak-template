@@ -52,6 +52,7 @@ npm install
 ```
 ANTHROPIC_API_KEY=your_anthropic_api_key
 PRIVATE_KEY=your_wallet_private_key
+PUBLIC_KEY=your_wallet_public_address
 RPC_URL=your_starknet_rpc_url
 ```
 
