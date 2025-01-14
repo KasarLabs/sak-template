@@ -1,5 +1,5 @@
-import { StarknetAgent } from 'starknet-agent-kit';
-import * as dotenv from 'dotenv';
+import { StarknetAgent } from "starknet-agent-kit";
+import * as dotenv from "dotenv";
 
 dotenv.config();
 
@@ -9,7 +9,7 @@ async function main() {
     const { ANTHROPIC_API_KEY, PRIVATE_KEY, RPC_URL } = process.env;
     if (!ANTHROPIC_API_KEY || !PRIVATE_KEY || !RPC_URL) {
       throw new Error(
-        'Missing required environment variables. Please check your .env file.'
+        "Missing required environment variables. Please check your .env file.",
       );
     }
 
@@ -19,14 +19,13 @@ async function main() {
       walletPrivateKey: PRIVATE_KEY,
     });
 
-    console.log('StarknetAgent initialized successfully.');
+    console.log("StarknetAgent initialized successfully.");
 
     // Test the agent with a simple request
-    const balanceResponse = await agent.execute('What is my ETH balance?');
-    console.log('Balance response:', balanceResponse);
-
+    const balanceResponse = await agent.execute("What is my ETH balance?");
+    console.log("Balance response:", balanceResponse);
   } catch (error) {
-    console.error('Error:', error.message);
+    console.error("Error:", error.message);
   }
 }
 
