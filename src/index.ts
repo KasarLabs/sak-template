@@ -6,8 +6,8 @@ dotenv.config();
 async function main() {
   try {
     // Ensure required environment variables are present
-    const { ANTHROPIC_API_KEY, PRIVATE_KEY, RPC_URL } = process.env;
-    if (!ANTHROPIC_API_KEY || !PRIVATE_KEY || !RPC_URL) {
+    const { AI_PROVIDER, AI_MODEL, AI_PROVIDER_API_KEY, PRIVATE_KEY, RPC_URL } = process.env;
+    if (!AI_PROVIDER || !AI_MODEL || !AI_PROVIDER_API_KEY || !PRIVATE_KEY || !RPC_URL) {
       throw new Error(
         "Missing required environment variables. Please check your .env file.",
       );
@@ -15,8 +15,10 @@ async function main() {
 
     // Initialize the StarknetAgent with required credentials
     const agent = new StarknetAgent({
-      anthropicApiKey: ANTHROPIC_API_KEY,
+      aiProviderApiKey: AI_PROVIDER_API_KEY,
       walletPrivateKey: PRIVATE_KEY,
+      aiModel: AI_MODEL,
+      aiProvider: AI_PROVIDER,
     });
 
     console.log("StarknetAgent initialized successfully.");
