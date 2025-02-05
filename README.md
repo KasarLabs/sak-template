@@ -54,10 +54,11 @@ ANTHROPIC_API_KEY=your_anthropic_api_key
 PRIVATE_KEY=your_wallet_private_key
 PUBLIC_KEY=your_wallet_public_address
 RPC_URL=your_starknet_rpc_url
-AI_PROVIDER="your_ai_provider_name" 
+AI_PROVIDER="your_ai_provider_name"
 AI_MODEL="your_model_name"
 AI_PROVIDER_API_KEY="your_ai_provider_key"
 ```
+
 > ℹ **Info**: You can find all the providers and their model names [here](https://github.com/KasarLabs/starknet-agent-kit/blob/main/src/config/env.validation.ts).
 
 4. Run the application:

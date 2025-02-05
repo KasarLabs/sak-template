@@ -21,7 +21,7 @@
     "@types/node": "^22.10.6",
     "dotenv": "^16.4.7",
     "starknet": "^6.11.0",
-    "starknet-agent-kit": "^0.0.7",
+    "starknet-agent-kit": "file:../starknet-agent-kit/starknet-agent-kit-0.0.9.tgz",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },
