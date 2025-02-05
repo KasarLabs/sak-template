@@ -50,13 +50,13 @@ npm install
 3. Create a `.env` file in the root directory with:
 
 ```
-ANTHROPIC_API_KEY=your_anthropic_api_key
-PRIVATE_KEY=your_wallet_private_key
-PUBLIC_KEY=your_wallet_public_address
-RPC_URL=your_starknet_rpc_url
-AI_PROVIDER="your_ai_provider_name"
-AI_MODEL="your_model_name"
-AI_PROVIDER_API_KEY="your_ai_provider_key"
+PRIVATE_KEY="your_wallet_private_key"
+PUBLIC_ADDRESS="your_wallet_address"
+RPC_URL="your_rpc_endpoint"
+AI_PROVIDER_API_KEY="your_ai_api_key"
+AI_PROVIDER="anthropic"  # or "openai", "gemini", "ollama"
+AI_MODEL="claude-3-5-sonnet-latest"  # or your chosen model
+API_KEY="your_api_key_for_endpoints"
 ```
 
 > ℹ **Info**: You can find all the providers and their model names [here](https://github.com/KasarLabs/starknet-agent-kit/blob/main/src/config/env.validation.ts).
@@ -72,7 +72,7 @@ The template includes a basic setup that queries your ETH balance. You can modif
 ## Getting an Anthropic API Key
 
 1. Visit https://console.anthropic.com/
-2. Create an account
+2. Create an accountw
 3. Navigate to API Keys section
 4. Click "Create Key"
 
