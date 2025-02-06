@@ -44,7 +44,7 @@ cd sak-template
 2. Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 3. Create a `.env` file in the root directory with:
@@ -64,7 +64,7 @@ API_KEY="your_api_key_for_endpoints"
 4. Run the application:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 The template includes a basic setup that queries your ETH balance. You can modify `src/index.ts` to implement other functionalities available in the Starknet Agent Kit.
